@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
 
     <script>
         const ROOM_ID = "<%= roomId %>";
@@ -20,7 +21,16 @@
                 <div id="video-grid"></div>
             </div>
             <div class="main-controls">
-
+                <div class="main__controls__block">
+                    <div class="main__controls__button">
+                        <i class="fa-solid fa-microphone"></i>
+                        <span>Mute</span>
+                    </div>
+                    <div class="main__controls__button">
+                        <i class="fa-solid fa-video"></i>
+                        <span>Stop Video</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="main__right">
