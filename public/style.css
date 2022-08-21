@@ -1,3 +1,7 @@
+body{
+    padding: 0;
+    margin: 0;
+}
 .main {
     height: 100vh;
     display: flex;
@@ -22,16 +26,13 @@
     padding: 40px;
 }
 
-.main__controls {
-    background-color: #1C1E20;
-}
-
 .main__right {
     background-color: #242324;
     border-left: 1px solid #3D3D42;
 }
 
 .main__controls {
+    background-color: #1C1E20;
     color: #D2D2D2;
     display: flex;
     justify-content: space-between;
@@ -50,6 +51,7 @@
     padding: 8px 10px;
     min-width: 80px;
     cursor: pointer;
+    width: 130px;
 }
 
 .main__controls__button:hover {
@@ -92,6 +94,13 @@
     background-color: transparent;
     border: none;
     color: #F5F5F5;
+    outline: none;
+    height: 40px;
+    padding-left: 8px;
+}
+.main__message_container input:focus {
+    border: 1px solid rgb(210 210 210 / 56%);
+    border-radius: 7px;
 }
 
 .leave_meeting {
