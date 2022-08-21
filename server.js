@@ -25,6 +25,10 @@ io.on('connection', socket => {
         socket.join(roomId);
         socket.broadcast.to(roomId).emit('user-connected', userId);
 
+        // When the user is connected we need to be ready nfor any message.
+        socket.on("message", message => {
+            io.to(roomId).emit('createMessage', message);
+        });
     });
 })
 
